@@ -5,7 +5,7 @@ import Player from "./components/Player";
 import "./App.css";
 import { connect } from "react-redux";
 import changeMovie from "./actions/index";
-
+//lasdjnf ajsdf
 // criar a store
 // criar as actions e reducers
 // conectar o componente
