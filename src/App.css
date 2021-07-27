@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --purple: rgb(85, 70, 219);
+  --selectedItem: #ccc;
+  --borderColor: #000;
+}
+
+body {
+  font-size: 15px;
+}
+
+.app {
+  display: flex;
+  margin: 1.5rem;
+}
+
+.player {
+  flex: 3;
+}
+
+.player img {
+  width: 100%;
+}
+
+.player span {
+  color: var(--purple);
+  font-size: 1rem;
+}
+
+.player h1 {
+  font-size: 1.7rem;
+}
+
+.categories {
+  flex: 1;
+  margin-left: 1.5rem;
+}
+
+.category {
+  margin-bottom: 1rem;
+}
+
+.category-title {
+  border: 2px solid var(--borderColor);
+  margin: 0;
+  padding: 0.5rem 0.1rem;
+}
+
+.category-movies {
+  border: 1px solid var(--borderColor);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-movies li {
+  cursor: pointer;
+  padding: 0.5rem 0.1rem;
+}
+
+.category-movies li:hover,
+li.active {
+  color: var(--selectedItem);
+}
